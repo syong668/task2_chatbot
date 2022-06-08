@@ -1,0 +1,19 @@
+
+// color
+$primary: #56C4C5;
+$red: #FF5D50;
+$yellow: #F5CA52;
+$dark:#221E1F;
+$gray: #747474;
+$white: #fff;
+$light: #DDDDDD;
+
+// font-size
+$fs-base: 16px;
+
+// flex
+@mixin f-jcsb-aic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
