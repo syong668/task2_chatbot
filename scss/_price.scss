@@ -199,6 +199,7 @@
 
             h2 {
                 font-weight: normal;
+                cursor: pointer;
                 position: relative;
                 .qa-toggle {
                     color: $primary;
@@ -213,6 +214,10 @@
                 line-height: 32px;
                 margin-top: 16px;
             }
+
+            .qaContent {display: none;}
+            .quContentToggle{display: block;}
+            
 
         }
     }

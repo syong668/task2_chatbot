@@ -43,11 +43,11 @@
         <section class="min-container case">
             <h1 class="fs-x2 fw-bold text-center">彈性選擇，提供您選擇最適合的方案</h1>
             <div class="case-select">
-                <button class="btn btn-primary fs-18">10000位</button>
-                <button class="btn btn-outline-primary fs-18">15000位</button>
-                <button class="btn btn-outline-primary fs-18">20000位</button>
-                <button class="btn btn-outline-primary fs-18">25000位</button>
-                <button class="btn btn-outline-primary fs-18">>25000位</button>
+                <button class="btn btn-outline-primary fs-18 caseBtn btn-active-primary">10000位</button>
+                <button class="btn btn-outline-primary fs-18 caseBtn">15000位</button>
+                <button class="btn btn-outline-primary fs-18 caseBtn">20000位</button>
+                <button class="btn btn-outline-primary fs-18 caseBtn">25000位</button>
+                <button class="btn btn-outline-primary fs-18 caseBtn">>25000位</button>
             </div>
             <div class="case-card">
                 <div class="card">
@@ -56,12 +56,12 @@
                     <div class="card-info">
                         <section class="information">
                             <div class="fs-12">訂閱用戶數</div>
-                            <h3 class="text-primary">10000<span class="fs-12">&nbsp;位</span></h3>
+                            <h3 id="peopleCount" class="text-primary">10000<span class="fs-12">&nbsp;位</span></h3>
                         </section>
                         <div class="fs-x15">=</div>
                         <section class="information">
                             <div class="fs-12">試算每月的費用</div>
-                            <h3>600<span class="fs-12">&nbsp;TWD</span></h3>
+                            <h3 id="priceCount">600<span class="fs-12">&nbsp;TWD</span></h3>
                         </section>
                     </div>
     
@@ -83,12 +83,12 @@
                     <div class="card-info">
                         <section class="information">
                             <div class="fs-12">訂閱用戶數</div>
-                            <h3 class="text-primary">10000<span class="fs-12">&nbsp;位</span></h3>
+                            <h3 id="peopleCountPlus" class="text-primary">10000<span class="fs-12">&nbsp;位</span></h3>
                         </section>
                         <div class="fs-x15">=</div>
                         <section class="information">
                             <div class="fs-12">試算每月的費用</div>
-                            <h3>1600<span class="fs-12">&nbsp;TWD</span></h3>
+                            <h3 id="priceCountPlus">1600<span class="fs-12">&nbsp;TWD</span></h3>
                         </section>
                     </div>
     
@@ -111,14 +111,16 @@
             <h1 class="fs-x2 fw-bold text-center">常見問題</h1>
             <ul>
                 <li>
-                    <h2 class="fs-18 fw-bold">我要怎麼變更方案？<span class="qa-toggle">+</span></h2>
+                    <h2 class="fs-18 fw-bold qaTitle">我要怎麼變更方案？<span class="qa-toggle">+</span></h2>
+                    <p class="qaContent">當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
                 </li>
                 <li>
-                    <h2 class="fs-18 fw-bold">如果我沒有LINE官方帳號怎麼辦？<span class="qa-toggle">+</span></h2>
+                    <h2 class="fs-18 fw-bold qaTitle">如果我沒有LINE官方帳號怎麼辦？<span class="qa-toggle">+</span></h2>
+                    <p class="qaContent">當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
                 </li>
                 <li>
-                    <h2 class="fs-18 text-primary fw-bold">非上班日有客服支援嗎？<span class="qa-toggle">–</span></h2>
-                    <p>當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
+                    <h2 class="fs-18 fw-bold qaTitle">非上班日有客服支援嗎？<span class="qa-toggle">+</span></h2>
+                    <p class="qaContent">當然哦！我們錢都收了，不會拋棄你的！<br>請您直接來我們公司，我們假日也都在辦公室。</p>
                 </li>
             </ul>
         </section>
@@ -128,5 +130,7 @@
     <footer>
         <p>© 2022 chatTalker. All Rights Reserved.</p>
     </footer>
+
+    <script src="js/price.js"></script>
 </body>
 </html>

@@ -67,6 +67,7 @@ body {
 .btn-red:hover { background-color: lighten($red, 8%); transition: .3s;}
 .btn-primary:hover { background-color: lighten($primary, 8%); transition: .3s;}
 .btn-outline-primary { border: 1px solid $primary; color: $primary; background-color: $white;}
+.btn-active-primary {background-color: $primary; color: $white;}
 
 header{
     height: 100vh;

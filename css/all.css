@@ -186,6 +186,11 @@ body {
   background-color: #fff;
 }
 
+.btn-active-primary {
+  background-color: #56C4C5;
+  color: #fff;
+}
+
 header {
   height: 100vh;
   position: relative;
@@ -972,6 +977,7 @@ footer p {
 }
 .question ul li h2 {
   font-weight: normal;
+  cursor: pointer;
   position: relative;
 }
 .question ul li h2 .qa-toggle {
@@ -984,4 +990,10 @@ footer p {
   color: #747474;
   line-height: 32px;
   margin-top: 16px;
+}
+.question ul li .qaContent {
+  display: none;
+}
+.question ul li .quContentToggle {
+  display: block;
 }
