@@ -1,7 +1,6 @@
+
+// 方案選擇
 const caseBtn = document.querySelectorAll(".caseBtn")
-console.log(caseBtn)
-
-
 const peopleCount = document.querySelector("#peopleCount")
 const priceCount = document.querySelector("#priceCount")
 const peopleCountPlus = document.querySelector("#peopleCountPlus")
@@ -9,8 +8,6 @@ const priceCountPlus = document.querySelector("#priceCountPlus")
 let peopleNum = 10000
 let priceNum = 600
 let priceNumPlus = 1600
-
-
 caseBtn.forEach((el) => {
     el.addEventListener('click',() => {
         caseBtn.forEach((el) => {el.classList.remove("btn-active-primary")})
@@ -31,11 +28,13 @@ caseBtn.forEach((el) => {
             priceNum = 1500
             priceNumPlus = 2500
             el.classList.add("btn-active-primary")
+
         }else if(el.innerText == "25000位") {
             peopleNum = 25000
             priceNum = 1700
             priceNumPlus = 3000
             el.classList.add("btn-active-primary")
+
         }else if(el.innerText == ">25000位") {
             peopleNum = 25000
             priceNum = "洽客服"
@@ -52,13 +51,10 @@ caseBtn.forEach((el) => {
 })
 
 
-
+//問答區
 const qaTitle = document.querySelectorAll(".qaTitle")
 const qaContent = document.querySelectorAll(".qaContent")
 const qaToggle = document.querySelectorAll(".qa-toggle")
-// qaContent.style.display = none 
-
-
 qaTitle.forEach((el,key) => {
     el.addEventListener('click', () => {
         qaContent[key].classList.toggle("quContentToggle");
