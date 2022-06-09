@@ -210,8 +210,13 @@ header .navbar a {
   display: block;
 }
 header .navbar a .logo {
-  width: 100%;
-  max-height: 40px;
+  width: 220px;
+  height: 40px;
+}
+@media (max-width: 576px) {
+  header .navbar a .logo {
+    width: 150px;
+  }
 }
 header .banner {
   display: -webkit-box;
@@ -244,6 +249,7 @@ header .banner section h1 {
 header .banner section h2 {
   margin-top: 16px;
   line-height: 29px;
+  font-weight: lighter;
 }
 @media (max-width: 768px) {
   header .banner section h3 {
@@ -334,6 +340,9 @@ main .ball-03 {
 }
 main section {
   padding: 50px 0px;
+}
+main .platform h1 {
+  padding-top: 50px;
 }
 main .platform ul {
   display: -webkit-box;
