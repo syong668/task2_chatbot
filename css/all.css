@@ -737,7 +737,7 @@ footer p {
 @media (max-width: 576px) {
   .price-banner {
     border-radius: 0px 0px 0px 200px;
-    height: 70vh;
+    height: 80vh;
   }
   .price-banner .banner-img {
     display: none;
