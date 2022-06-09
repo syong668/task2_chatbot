@@ -14,6 +14,7 @@ body {
     right: calc(100vh - 98vh);
     bottom: calc(100vh - 98vh);
     z-index: 2;
+    outline: none;
     @media (max-width:768px) {
         background-size: cover;
         width: 60px;
@@ -34,6 +35,7 @@ body {
 }
 
 // font
+.fs-12 { font-size: 12px;}
 .fs-18{ font-size:  18px; }
 .fs-20 { font-size: 20px; }
 .fs-x15 { font-size: $fs-base * 1.5;}
@@ -57,12 +59,14 @@ body {
     border-radius: 22px;
     line-height: $fs-base *1.5;
     color: $white;
+    border: 0;
+    cursor: pointer;
 }
 .btn-red { background-color: $red; }
 .btn-primary { background-color: $primary; }
 .btn-red:hover { background-color: lighten($red, 8%); transition: .3s;}
 .btn-primary:hover { background-color: lighten($primary, 8%); transition: .3s;}
-
+.btn-outline-primary { border: 1px solid $primary; color: $primary; background-color: $white;}
 
 header{
     height: 100vh;
@@ -90,7 +94,7 @@ header{
             .logo {
                 width: 220px;
                 height: 40px;
-                @media (max-width:576px) {width: 150px;}
+                @media (max-width:576px) {width: 150px; vertical-align: middle;}
             }
         }
     }
