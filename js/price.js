@@ -26,9 +26,9 @@ $(document).ready(()=>{
 
     // 方案費用選擇
     for( let i=0; i<$(".caseBtn").length; i++) {
-        
         let selectTag = $($(".caseBtn")[i]).text();
         $($(".caseBtn")[i]).on("click", ()=> {
+            $(".case-card").fadeOut("fast")
             $(".caseBtn").removeClass("btn-active-primary")
             if( selectTag == "10000位" ) {
                 peopleNum = 10000
@@ -56,7 +56,7 @@ $(document).ready(()=>{
                 priceNumPlus = "洽客服"
                 $($(".caseBtn")[i]).addClass("btn-active-primary")
             }
-
+            $(".case-card").fadeIn("fast")
             $("#peopleCount,#peopleCountPlus").html(`${peopleNum}<span class="fs-12">&nbsp;位</span>`)
             $("#priceCount").html(`${priceNum}<span class="fs-12">&nbsp;TWD</span>`)
             $("#priceCountPlus").html(`${priceNumPlus}<span class="fs-12">&nbsp;TWD</span>`)
