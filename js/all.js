@@ -1,3 +1,5 @@
+AOS.init();
+
 const swiper = new Swiper('.swiper', {
     /*  預設要顯示幾個卡片 */
     slidesPerView: 3,
@@ -31,4 +33,10 @@ const swiper = new Swiper('.swiper', {
     autoplay: true
 
 });
+
+// top
+$("#toTop").on("click",(e)=>{
+    e.preventDefault();
+    $("html,body").animate({scrollTop: 0}, 700 );
+})
 

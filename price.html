@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/card01.png" type="image/x-icon">
-    <link
-        rel="stylesheet"
-        href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
     <title>ChatBot 方案費用</title>
 </head>
 <body>
-    <a href="#header" class="top-btn"></a>
+    <a id="toTop" href="#" class="top-btn"></a>
     <div class="price-banner">
-        <div class="banner-img"></div>
+        <div data-aos="fade-left" class="banner-img"></div>
         <div class="mobile-banner-img"></div>
     </div>
     <div class="price-ball"></div>
@@ -32,8 +30,8 @@
         </div>
 
         <section class="container">
-            <h1 class="fs-x3 fw-bold">計費方式說明</h1>
-            <p>聊天機器人幫你實現增粉、轉單、客服等目標</p>
+            <h1 data-aos="fade-right" class="fs-x3 fw-bold">計費方式說明</h1>
+            <p data-aos="fade-right" data-aos-delay="300">聊天機器人幫你實現增粉、轉單、客服等目標</p>
         </section>
 
     </header>
@@ -131,6 +129,8 @@
         <p>© 2022 chatTalker. All Rights Reserved.</p>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/price.js"></script>
 </body>
 </html>
