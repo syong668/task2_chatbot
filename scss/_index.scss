@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-    max-width: 1140px;
+    max-width: 1088px;
     margin: 0 auto;
     @media (max-width: 992px) {
         margin: 0px 20px;
@@ -95,14 +95,17 @@ header{
             .logo {
                 width: 220px;
                 height: 40px;
-                @media (max-width:576px) {width: 150px; vertical-align: middle;}
+                display: block;
+                @media (max-width:576px) {
+                    width: 150px;
+                }
             }
         }
     }
 
     .banner {
         @include f-jcsb-aic;
-
+        padding: 0px 24px;
         @media (max-width:992px) {
             flex-wrap: wrap;
             justify-content: center;

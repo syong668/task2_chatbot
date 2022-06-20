@@ -88,7 +88,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1088px;
   margin: 0 auto;
 }
 @media (max-width: 992px) {
@@ -230,11 +230,11 @@ header .navbar a {
 header .navbar a .logo {
   width: 220px;
   height: 40px;
+  display: block;
 }
 @media (max-width: 576px) {
   header .navbar a .logo {
     width: 150px;
-    vertical-align: middle;
   }
 }
 header .banner {
@@ -247,6 +247,7 @@ header .banner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0px 24px;
 }
 @media (max-width: 992px) {
   header .banner {
