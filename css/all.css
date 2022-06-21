@@ -185,6 +185,10 @@ body {
   color: #56C4C5;
   background-color: #fff;
 }
+.btn-outline-primary:hover {
+  background-color: #56C4C5;
+  color: #fff;
+}
 
 .btn-active-primary {
   background-color: #56C4C5;
@@ -259,14 +263,14 @@ header .banner {
     padding-top: 32px;
   }
 }
-header .banner section h3 {
+header .banner section h4 {
   margin-bottom: 8px;
   line-height: 26px;
 }
-header .banner section h1 {
+header .banner section h2 {
   line-height: 70px;
 }
-header .banner section h2 {
+header .banner section h3 {
   margin-top: 16px;
   line-height: 29px;
   font-weight: lighter;
@@ -287,7 +291,6 @@ header .banner section h2 {
 }
 header .banner .banner-img {
   position: relative;
-  margin-top: 32px;
 }
 header .banner .banner-img img {
   width: 100%;
@@ -315,7 +318,7 @@ main .ball-01 {
   background-image: url("../img/ball01.svg");
   background-position: right;
   background-repeat: no-repeat;
-  width: 120px;
+  width: 138px;
   height: 360px;
 }
 main .ball-02 {
@@ -326,7 +329,7 @@ main .ball-02 {
   background-image: url("../img/ball02.svg");
   background-repeat: no-repeat;
   background-position: left;
-  width: 200px;
+  width: 210px;
   height: 360px;
 }
 main .ball-03 {
@@ -361,7 +364,7 @@ main .ball-03 {
 main section {
   padding: 50px 0px;
 }
-main .platform h1 {
+main .platform h2 {
   padding-top: 50px;
 }
 main .platform ul {
@@ -390,7 +393,7 @@ main .platform ul li img {
   width: 90px;
   height: 90px;
 }
-main .platform ul li h2 {
+main .platform ul li h3 {
   margin: 24px 0px;
   line-height: 35px;
 }
@@ -412,7 +415,7 @@ main .platform ul li p {
     width: 60px;
     height: 60px;
   }
-  main .platform ul li h2 {
+  main .platform ul li h3 {
     margin: 16px 0px;
     line-height: 26px;
   }
@@ -420,7 +423,7 @@ main .platform ul li p {
     line-height: 24px;
   }
 }
-main .serve h1 {
+main .serve h2 {
   line-height: 46px;
 }
 main .serve p {
@@ -447,7 +450,7 @@ main .serve ul li {
 main .serve ul li img {
   width: 100%;
 }
-main .serve ul li h2 {
+main .serve ul li h3 {
   margin: 16px 0px;
 }
 main .serve ul li p {
@@ -535,7 +538,7 @@ main .info ul li .circle img {
   width: 60%;
   height: 60%;
 }
-main .info ul li h2 {
+main .info ul li h3 {
   margin: 24px 0px 16px 0px;
 }
 main .info ul li p {
@@ -553,8 +556,11 @@ main .info div {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
-main .info div h1 {
+main .info div h2 {
   line-height: 46px;
 }
 main .info div p {
@@ -690,7 +696,7 @@ footer .footer-banner {
   text-align: center;
   padding: 18% 0px 60px;
 }
-footer .footer-banner h1 {
+footer .footer-banner h2 {
   margin-bottom: 48px;
   line-height: 46px;
 }
@@ -788,7 +794,7 @@ footer p {
 .price-header section {
   padding: 90px 0px;
 }
-.price-header section h1 {
+.price-header section h2 {
   line-height: 70px;
   margin-bottom: 16px;
 }
@@ -796,7 +802,7 @@ footer p {
   .price-header {
     height: 80vh;
   }
-  .price-header h1 {
+  .price-header h2 {
     font-size: 32px;
     line-height: 46px;
   }
@@ -812,16 +818,7 @@ footer p {
   }
 }
 
-.case {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.case h1 {
+.case h2 {
   margin-top: 50px;
 }
 .case .case-select {
@@ -888,12 +885,12 @@ footer p {
     width: 100%;
   }
 }
-.case .case-card .card h2 {
+.case .case-card .card h3 {
   padding: 16px 0px;
   border-bottom: 1px solid #DDDDDD;
 }
 @media (max-width: 576px) {
-  .case .case-card .card h2 {
+  .case .case-card .card h3 {
     font-size: 24px;
   }
 }
@@ -919,24 +916,23 @@ footer p {
   border-radius: 12px;
   padding: 24px 32px;
 }
+.case .case-card .card .card-info .information p {
+  margin: 0;
+}
+.case .case-card .card .card-info .information h4 {
+  margin-top: 8px;
+  font-size: 32px;
+}
 @media (max-width: 576px) {
   .case .case-card .card .card-info .information {
     padding: 16px 24px;
   }
-}
-.case .case-card .card .card-info .information h3 {
-  margin-top: 8px;
-  font-size: 28px;
+  .case .case-card .card .card-info .information h4 {
+    font-size: 20px;
+  }
 }
 .case .case-card .card ul {
   margin: 32px 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 16px;
 }
 .case .case-card .card ul li {
@@ -976,12 +972,12 @@ footer p {
           box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.0784313725);
   border-radius: 12px;
 }
-.question ul li h2 {
+.question ul li h3 {
   font-weight: normal;
   cursor: pointer;
   position: relative;
 }
-.question ul li h2 .qa-toggle {
+.question ul li h3 .qa-toggle {
   color: #56C4C5;
   font-size: 32px;
   position: absolute;

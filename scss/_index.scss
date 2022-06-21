@@ -66,7 +66,12 @@ body {
 .btn-primary { background-color: $primary; }
 .btn-red:hover { background-color: lighten($red, 8%); transition: .3s;}
 .btn-primary:hover { background-color: lighten($primary, 8%); transition: .3s;}
-.btn-outline-primary { border: 1px solid $primary; color: $primary; background-color: $white;}
+.btn-outline-primary { 
+    border: 1px solid $primary; 
+    color: $primary; 
+    background-color: $white;
+    &:hover { background-color: $primary; color: $white; }
+}
 .btn-active-primary {background-color: $primary; color: $white;}
 
 header{
@@ -110,18 +115,17 @@ header{
             flex-wrap: wrap;
             justify-content: center;
             padding-top: 32px;
-
         }
 
         section{
-            h3 {
+            h4 {
                 margin-bottom: 8px;
                 line-height: 26px;
             }
-            h1 {
+            h2 {
                 line-height: 70px;
             }
-            h2 {
+            h3 {
                 margin-top: 16px;
                 line-height: 29px;
                 font-weight:lighter;
@@ -145,7 +149,6 @@ header{
 
         .banner-img {
             position: relative;
-            margin-top: 32px;
             img {
                 width: 100%;
                 height: 100%;
@@ -173,7 +176,7 @@ main {
         background-image: url('../img/ball01.svg');
         background-position: right;
         background-repeat: no-repeat;
-        width: 120px;
+        width: 138px;
         height: 360px;
     }
     .ball-02 {
@@ -184,7 +187,7 @@ main {
         background-image: url('../img/ball02.svg');
         background-repeat: no-repeat;
         background-position: left;
-        width: 200px;
+        width: 210px;
         height: 360px;
     }
     .ball-03 {
@@ -221,7 +224,7 @@ main {
 
     section { padding: 50px 0px;}
     .platform {
-        h1 {padding-top: 50px ;}
+        h2 {padding-top: 50px ;}
         ul {
             display: flex;
             justify-content: space-between;
@@ -232,7 +235,7 @@ main {
                 flex-direction: column;
                 align-items: center;
                 img { width: 90px; height: 90px; }
-                h2 { margin: 24px 0px; line-height: 35px;}
+                h3 { margin: 24px 0px; line-height: 35px;}
                 p { line-height: 24px;}
             }
 
@@ -243,7 +246,7 @@ main {
                 li {
                     width: 100%;
                     img { width: 60px; height: 60px; }
-                    h2 { margin: 16px 0px; line-height: 26px;}
+                    h3 { margin: 16px 0px; line-height: 26px;}
                     p { line-height: 24px;}
                 }
             }
@@ -251,7 +254,7 @@ main {
     }
 
     .serve {
-        h1{ line-height: 46px;}
+        h2{ line-height: 46px;}
         p { margin-top: 16px; line-height: 29px;}
         ul { 
             margin-top: 48px; 
@@ -266,7 +269,7 @@ main {
                 width: 23.6%;
 
                 img {width: 100%;}
-                h2 { margin: 16px 0px; }
+                h3 { margin: 16px 0px; }
                 p { margin: 0px 16px 24px 16px; line-height: 24px;}
             }
         }
@@ -323,7 +326,7 @@ main {
                     align-items: center;
                     img { width: 60%; height:60%;}
                 }
-                h2 {margin: 24px 0px 16px 0px;}
+                h3 {margin: 24px 0px 16px 0px;}
                 p { line-height: 24px;}
             }
         }
@@ -333,7 +336,8 @@ main {
             display: flex;
             flex-direction:column;
             justify-content: center;
-            h1{ line-height: 46px;}
+            align-items:flex-start;
+            h2{ line-height: 46px;}
             p { margin: 16px 0px 24px 0px; line-height: 26px;}
         }
 
@@ -386,9 +390,6 @@ main {
             background-color: $white;
             box-shadow: 0px 2px 10px #00000014;
             position: relative;
-            // @media (max-width: 992px) {
-            //     width: 100%;
-            // }
 
             .user-img { 
                 width: 80px; 
@@ -438,7 +439,7 @@ footer {
     .footer-banner {
         text-align: center;
         padding: 18% 0px 60px;
-        h1 {margin-bottom: 48px; line-height: 46px;}
+        h2 {margin-bottom: 48px; line-height: 46px;}
     }
     p{ background-color: $light; padding: 16px 0px; text-align: center;}
 
